@@ -1,0 +1,119 @@
+$border-radius:50px;
+$celeste:#3CB1F6;
+$fuente:'Lato';
+$gray:#989EA5;
+
+@mixin button(){
+     border-radius:50px;
+	 border:1px solid $celeste;
+     padding: 13px;
+     width: 110px;
+     font-family:$fuente;
+     margin-bottom:20px;
+}
+
+@mixin iconos(){
+      margin-left:1%;
+	  margin-right:0.5%;
+}
+
+header {
+	padding:2%;
+	font-family:$fuente;
+}
+.hero{
+	 background-image:url(../images/1920x665-1.jpg);
+	 background-size:cover;
+	 background-repeat:no-repeat;
+	 background-position:center;
+	 width:100%; 
+	 .opa{
+	 background-color:rgba(15,15,15,0.5);
+	 padding:200px;
+	 width:100%;
+	 font-family:$fuente;
+	 color:white;
+	}
+	 
+}
+
+.botones{
+
+	.one{
+	@include button();
+     background-color:$celeste;
+	}
+
+	.two{
+	 @include button();
+     background-color:transparent;
+     color:$celeste;
+	}
+
+}
+
+.iconos{
+	.icon1{
+	  @include iconos();
+	}
+	.icon2{
+	  @include iconos();
+	}
+	
+}
+
+
+.second{
+	padding:6%;
+	font-family:$fuente;
+	h1{
+	color:$gray;
+	}
+	text-p{
+	color:$gray;
+	}
+	.cellphone1{
+	width:100%;
+	height:90%;
+	padding:5% 0;
+	}
+	.learn{
+	@include button();
+	background-color:transparent;
+	color:$celeste;
+	}
+}
+
+.third{
+	background-color:#F6F6F6;
+	padding:4%;
+	font-family:$fuente;
+	h1{
+	color:$gray;
+	font-family:$fuente;
+	}
+	.cellphone2{
+	width:90%;
+	height:90%;
+	margin-top:10%;
+	margin-right:9%;
+	padding:6% 0;
+	}
+}
+
+footer{
+	padding:4%;
+	text-align:center;
+	font-family:$fuente;
+    .last-icon{
+    color:$celeste;
+    background-color:transparent;
+    border:1px solid $celeste;
+    border-radius:50%;
+    width:4%;
+    padding:1.2%;
+    text-align:center;
+    margin-bottom:3%;    
+
+   }
+}
